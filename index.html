@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://i.postimg.cc/MGn9GJXw/family.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "1. My Father (Sanjaykumar Mali)",
+   "2. My Mother (Shweta Mali)",
+   "3. My Sister (Rashi Mali)",
+   "4. Me (Vaidehi Mali)"
+   ];
+ var images=[
+   "https://i.postimg.cc/wjMnFtMX/father.jpg",
+   "https://i.postimg.cc/bw5W5zSK/mother.jpg",
+   "https://i.postimg.cc/JnL6wtrd/sister.jpg",
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMivFaMlV38T3zvs1o8AzK_DBQxZONp1jk8CbaxHj50CxlKNyceX9NAjHoUt0YwI22NEc&usqp=CAU"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+  </html>
